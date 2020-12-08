@@ -137,7 +137,7 @@ def predict():
     query = decontracted(query)
     query = nlp_preprocessing(query)
     sentence = query
-
+    start_time = time.time()
     avg_w2v_vectors_cv = []; # the avg-w2v for each sentence/review is stored in this list
     vector = np.zeros(300) # as word vectors are of zero length
     cnt_words =0; # num of words with a valid vector in the sentence/review
@@ -169,9 +169,15 @@ def predict():
     print("--- %s seconds ---" % (time.time() - start_time))
 
     ################################################################################################
+    fw = open('SimilarPosts.txt', 'w')
     for index in top_items:
         print (total_df.iloc[index,3])
+        fw.write(total_df.iloc[index,3] + "\n")
         print("*************************************************************************************************************")
+    fw.close()
+
+    with open('SimilarPosts.txt', 'r') as f: 
+	    return flask.render_template('similar.html', text=f.read()) 
 
 if __name__ == '__main__':
-    app.run(host = '0.0.0.0', port = 8080, threaded = True)
+    app.run()

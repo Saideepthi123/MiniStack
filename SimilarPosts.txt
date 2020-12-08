@@ -1,0 +1,10 @@
+artificial intelligence a modern approach 
+     theoretical    philosophical    social     historicalaspects of artificial intelligence 
+for questions that involve the pseudocode of artificial intelligence algorithms
+what is the definition of artificial intelligence
+how is artificial intelligence different from machine learning
+typically refers to symbolic artificial intelligence  essentially inference engines used for rulesbased systems
+how can artificial intelligence be applied to software testing  
+what impact will artificial intelligence have on human society
+what is the difference between artificial intelligence and robots
+for questions related to the space complexity analysis of artificial intelligence algorithms
