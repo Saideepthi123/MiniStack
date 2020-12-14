@@ -174,7 +174,7 @@ def predict():
     fw = open('SimilarPosts.txt', 'w')
     for index in top_items:
         #print (total_df.iloc[index,3])
-        fw.write(total_df.iloc[index,3] + "\n")
+        fw.write(total_df.iloc[index,4] + "\n\n")
         #print("*************************************************************************************************************")
     fw.close()
 
@@ -237,7 +237,8 @@ def pop():
         except TypeError:
             continue
     print('\nResult saved to file Tags_frequency.txt')
-
+    fw.close()
+    
     with open('Tags_frequency.txt', 'r') as f: 
 	    return flask.render_template('populartechstack.html', text=f.read()) 
 
