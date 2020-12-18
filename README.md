@@ -32,3 +32,6 @@ To run the code in server
 - activate the virtual environment (Command : env/Scripts/activate)
 - install requirements.txt (Command: pip install -r requirements.txt)
 - run python app.py in the terminal
+
+## Github repository Link
+https://github.com/Saideepthi123/MiniStack
